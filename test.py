@@ -1,9 +1,8 @@
-# Hằng số đại diện cho ô trống, ô của người chơi và ô của máy tính
+
 EMPTY = "-"
 PLAYER = "X"
 COMPUTER = "O"
 
-# Hàm để vẽ bảng Caro
 def draw_board(board):
     for row in board:
         print(" | ".join(row))
@@ -90,6 +89,7 @@ def computer_move(board):
         board[best_move[0]][best_move[1]] = COMPUTER
 
 def play_caro():
+    print("hello ae")
     board = create_board()
     current_player = PLAYER
     winner = None
